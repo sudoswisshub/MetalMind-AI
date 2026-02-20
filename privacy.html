@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Own Ai</title>
+    <title>Privacy Policy - Own Ai</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,47 +16,57 @@
         </header>
 
         <nav class="nav-links">
-            <a href="privacy.html">Privacy Policy</a>
+            <a href="privacy.html" style="color: #FF2D55;">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
-            <a href="support.html" style="color: #FF2D55;">Support</a>
+            <a href="support.html">Support</a>
         </nav>
 
         <div class="card">
-            <h1>Support</h1>
-            <p>Need assistance with Own Ai? We're dedicated to helping you get the most out of your local AI experience.
-            </p>
+            <h1>Privacy Policy</h1>
+            <p>Last updated: February 20, 2026</p>
 
-            <h2>Frequently Asked Questions</h2>
+            <p>At Own Ai, your privacy is not a feature—it is our foundation. We believe that your conversations with AI
+                are personal and should remain that way. Most processing happens on-device, and when you choose Apple
+                Intelligence, your content may be processed by Apple to generate responses.</p>
 
-            <h3>How is this different from ChatGPT?</h3>
-            <p>Unlike cloud-based services, Own Ai runs on your device for local models and can also use Apple
-                Intelligence when selected. With local models, your data stays on-device. When using Apple Intelligence,
-                your content may be processed by Apple to generate responses.</p>
+            <h2>1. Zero Data Collection</h2>
+            <p>We do not collect, store, or transmit your personal data, conversation history, or usage analytics to any
+                remote servers. If you choose Apple Intelligence, Apple may process your prompts and any documents you
+                choose to analyze to generate responses. We do not receive or store that content on our servers.</p>
 
-            <h3>Why is the "Apple Intelligence" status Red?</h3>
-            <p>This usually means Apple Intelligence is not enabled in your iOS system settings. Go to <strong>Settings
-                    > Apple Intelligence & Siri</strong> and ensure it is activated for your device.</p>
-
-            <h3>The AI is taking a long time to respond.</h3>
-            <p>Generation speed depends on your device's processor. To improve speed:
+            <h2>2. On-Device Processing</h2>
+            <p>AI inference and speech processing primarily occur locally on your device hardware, with Apple
+                Intelligence able to use Apple Private Cloud Compute to generate responses when selected.
             <ul>
-                <li>Disable Low Power Mode.</li>
-                <li>Ensure your device is not overheating.</li>
-                <li>Use smaller models like Gemma 2B for faster performance.</li>
+                <li><strong>Apple Intelligence & Speech:</strong> Speech-to-text and text-to-speech are performed
+                    on-device using Apple's Speech Framework. Apple Intelligence responses may be processed by Apple
+                    (including Apple Private Cloud Compute) to generate outputs.</li>
+                <li><strong>Local LLMs (MLX/Gemma):</strong> Models are downloaded from public repositories (e.g.
+                    Hugging Face) and stored locally. Inference runs directly on your device's Silicon (GPU/Neural
+                    Engine). Downloading models uses network access but does not transmit your prompts or documents.
+                </li>
             </ul>
-            </p>
+            When using local models, no text, voice recordings, or document contents are sent to the cloud for
+            processing.</p>
 
-            <h3>How do I use my own documents?</h3>
-            <p>Tap the <strong>"+"</strong> button in the chat view to upload PDFs or text files. Own Ai will analyze
-                them locally and allow you to ask questions about the content.</p>
+            <h2>3. Document Privacy (RAG)</h2>
+            <p>When you upload documents for analysis, they are processed and indexed locally. The extracted text and
+                vector embeddings remain strictly within your device's secure storage. If you choose Apple Intelligence,
+                document content may be processed by Apple to generate responses.</p>
 
-            <h2>Troubleshooting</h2>
-            <p>If you experience crashes or issues downloading models, try restarting the app or checking your storage
-                space (models require 1.5GB - 5GB of free space).</p>
+            <h2>4. Third-Party Services</h2>
+            <p>Own Ai does not include third-party tracking, advertising, or analytics SDKs. Apple Intelligence is
+                provided by Apple and may process content when selected. Local models are downloaded from public model
+                repositories, but your prompts and documents are not sent to those services.</p>
 
-            <h2>Contact Our Team</h2>
-            <p>Email: <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a></p>
-            <a href="mailto:alice.turcanu91@gmail.com" class="contact-btn">Send us an Email</a>
+            <h2>5. Data Retention & Control</h2>
+            <p>Your chat history is saved only in your device's local database. You can clear individual conversations
+                or reset the entire app history at any time through the settings menu. Once deleted, this data is gone
+                and cannot be recovered by us.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have questions about this policy, please contact us at <a
+                    href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>.</p>
         </div>
 
         <div class="footer">
