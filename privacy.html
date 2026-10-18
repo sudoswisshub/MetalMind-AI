@@ -23,7 +23,7 @@
 
         <div class="card">
             <h1>Privacy Policy</h1>
-            <p>Last updated: March 28, 2026</p>
+            <p>Last updated: October 16, 2026</p>
 
             <p>Own AI is designed as a local-first AI app. This Privacy Policy explains what information the app
                 processes, when information stays on your device, when information may be shared with third parties you
@@ -47,7 +47,7 @@
                     you choose to download.</li>
                 <li><strong>Purchase and entitlement state:</strong> Whether you have access to Own AI Pro and related
                     local entitlement flags.</li>
-                <li><strong>Free-tier usage state:</strong> Local counters used to enforce install-based message limits for
+                <li><strong>Free-tier usage state:</strong> Local counters used to enforce daily message limits for
                     non-Pro users.</li>
             </ul>
 
@@ -59,8 +59,9 @@
                     availability, and StoreKit purchases.</li>
                 <li>From local storage on your device for chats, settings, downloaded models, and entitlement or usage
                     state.</li>
-                <li>From network requests only in the limited cases described below, such as model downloads, Apple
-                    Intelligence use, or App Store purchase flows.</li>
+                <li>From network requests only in the limited cases described below, such as model downloads, model
+                    search, web search you turn on, web pages you attach, Apple Intelligence use, iCloud sync of
+                    your model list, or App Store purchase flows.</li>
             </ul>
 
             <h2>4. How Data Is Used</h2>
@@ -70,7 +71,7 @@
                 <li>To support optional voice and Apple Watch experiences.</li>
                 <li>To save your preferences, chat history, downloaded models, and consent choices locally.</li>
                 <li>To verify whether you have an active Pro entitlement.</li>
-                <li>To enforce free-tier limits such as install-based usage caps for non-Pro users.</li>
+                <li>To enforce free-tier limits such as daily usage caps for non-Pro users.</li>
             </ul>
 
             <h2>5. When Data Stays On-Device</h2>
@@ -100,15 +101,40 @@
             <p>No chat prompts, imported document content, or conversation history are intentionally sent as part of a
                 model download request.</p>
 
-            <h3>6.3 In-App Purchases</h3>
+            <h3>6.3 Model Search</h3>
+            <p>When you search for models, the app sends your search terms, or the model link you entered, to
+                <strong>Hugging Face, Inc.</strong> to list matching models and their files. If you add a Hugging Face
+                access token, it is stored in your device's Keychain and sent only to Hugging Face with those
+                requests. No chat prompts, documents, or conversation history are sent.</p>
+
+            <h3>6.4 Live Web Search</h3>
+            <p>Live Web Search is off unless you turn it on. When it is on and a model decides a question needs current
+                information, the app sends a short search query written by the model from your question to
+                <strong>DuckDuckGo</strong> and gives the model the result titles, links, and snippets. The query is
+                sent without cookies or account identifiers. Your conversation, documents, and history are not sent.</p>
+
+            <h3>6.5 Web Pages You Attach</h3>
+            <p>When you attach a web page by its address, the app downloads that page directly from the website you
+                entered so it can be read like a document. Only the address you entered is requested; nothing about
+                your chat is sent with it. The website may see your IP address and basic request metadata.</p>
+
+            <h3>6.6 iCloud Sync of Your Model List</h3>
+            <p>If you are signed in to iCloud, the list of Hugging Face models you added or bookmarked (model names,
+                repository identifiers, versions, and sizes) is kept in your own iCloud key-value storage so a reinstall
+                or another of your devices can offer them again. Chats, documents, model files, and access tokens are
+                never synced. You can turn this off in the app.</p>
+
+            <h3>6.7 In-App Purchases</h3>
             <p>If you purchase, restore, or manage Own AI Pro, those transactions are handled by <strong>Apple</strong>
                 through StoreKit and the App Store. We do not receive your full payment card details. Apple may provide
                 us with transaction and entitlement information needed to determine whether Pro is active on your
                 device.</p>
 
             <h2>7. Free Tier Limits</h2>
-            <p>For users who do not have Own AI Pro, the app may enforce a fixed free message limit per install.</p>
-            <p>That install-based limit, usage counter, and warning state are stored locally on your device. They are used only
+            <p>For users who do not have Own AI Pro, the app limits how many messages can be sent each day. The daily
+                allowance can vary from day to day and resets at the start of each day. Short messages such as
+                greetings may not count toward it.</p>
+            <p>That daily limit, usage counter, and warning state are stored locally on your device. They are used only
                 to enforce feature access inside the app and are not intended as analytics profiling.</p>
 
             <h2>8. Storage, Retention, and Control</h2>
